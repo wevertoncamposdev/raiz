@@ -1,0 +1,58 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/core/prisma/"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  ARCHIVED
+}
+
+enum RoleType {
+  ADMIN
+  USER
+  GUEST
+}
+
+enum PermissionType {
+  READ
+  WRITE
+  DELETE
+}
+
+enum AuditType {
+  LOGIN
+  LOGOUT
+  DATA_CHANGE
+  PERMISSION_CHANGE
+}
+
+enum ReportType {
+  BUG
+  FEATURE_REQUEST
+  OTHER
+  REPORT
+  ANALYTICS
+  QUALITY
+  QUANTITY
+}
+
+enum ContactType {
+  EMAIL
+  PHONE
+  SOCIAL
+}
+
+enum FamilyRole {
+  PAI
+  MAE
+  FILHO
+  OUTRO
+}
