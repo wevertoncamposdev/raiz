@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="" target="blank">
+    <img src="./logo.png" width="520" alt-"Raiz">
+  </a>
+</p>
+
 # RAIZ — Documento Inicial de Arquitetura e Engenharia
 
 ## Visão Geral do Projeto
